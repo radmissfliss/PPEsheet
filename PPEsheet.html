@@ -1,0 +1,434 @@
+<input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="publicside"  />
+<div>
+    <button type="action" name="act_publicside" >Public Side</button>
+    <button type="action" name="act_naughtyside" >Naughty Side</button>
+</div>
+
+<div class="sheet-publicside">
+ <div class="linha centre">
+    <img src="https://github.com/radmissfliss/PPEsheet/blob/main/Paranoia-Title.png?raw=true">
+    TROUBLESHOOTER SHEET PUBLIC SIDE
+ </div>
+
+ <div class="linha">
+    &nbsp;
+    <br>
+    &nbsp;
+ </div>
+
+ <div class="linha">
+    <h3>PART 1: PERSONALLY IDENTIFIABLE INFORMATION (PII)<h3>
+ </div>
+
+ <hr>
+ <div class="linha">
+    <div class="cell width-60"><span>Name:</span></div>
+    <div class="cell"><input type="text" name="attr_name"></div>
+    <div class="cell width-10"></div>
+    <div class="cell width-100"><span>Team Name:</span></div>
+    <div class="cell"><input type="text" name="attr_team_name"></div>
+ </div>
+
+ <div class="linha">&nbsp;</div>
+
+ <div class="linha top">
+    <div class="cell width-280"><span>Mandatory Bonus Duty:</span></div>
+    <div class="cell width-100"><span>Service Group:</span></div>&nbsp;
+    <div class="cell width-280"><input type="text" name="attr_bonus_duty" class="width-260"></div>
+    <div class="cell top">      <select name="attr_service_group" class="width-400">
+					  <option value="0">Armed Forces</option>
+					  <option value="1">Central Processing Unit (CPU)</option>
+					  <option value="2">Housing Preservation Development & Mind Control (HPD&MC)</option>
+					  <option value="3">Internal Security (Intsec)</option>
+					  <option value="4">Production, Logistics and Commissary (PLC)</option>
+					  <option value="5">Power Services (PowerServ)</option>
+					  <option value="6">Research & Design (R&D)</option>
+					  <option value="7">Technical Services (TechServ)</option>
+					  </select>
+    </div>&nbsp;
+    <div class="cell width-280"><span>Treason Button:</span></div>
+    <div class="cell width-160"><span>Violence Button:</span></div>&nbsp;
+    <div class="cell top">      <textarea name="attr_treason_button" rows="5" cols="35" placeholder="What makes you commit treasonous acts?"></textarea></div>
+    <div class="cell width-20"></div>
+    <div class="cell top">      <textarea name="attr_violence_button" rows="5" cols="35" placeholder="What makes you commit violent acts?"></textarea></div>
+ </div>
+
+ <hr>
+ <br>
+
+ <div class="linha top">
+    <h3>PART TWO: STATS AND SKILLS</h3>
+ </div>
+
+ <hr>
+
+ <div class="linha">
+
+    <div class="cell width-180">
+        <div class="linha">
+            <div class="cell">
+                <div class="cell width-80"> <input type="radio" name="attr_statpick" value="@{brains}"> <span>BRAINS</span> </div>
+                <div class="cell width-40"> <input type="number" id="Brains" name="attr_brains" min="-5"  max="5" value="0"> </div>
+            </div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140"><input type="radio" name="attr_skillpick" value="@{alpha_complex}"><span>Alpha Complex</span></div>
+		    <div class="cell width-40"><input type="number" id="AlphaComplex" name="attr_alpha_complex" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140"><input type="radio" name="attr_skillpick" value="@{bureaucracy}"><span>Bureaucracy</span></div>
+		    <div class="cell width-40"><input type="number" id="Bureaucracy" name="attr_bureaucracy" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140"><input type="radio" name="attr_skillpick" value="@{psychology}"><span>Psychology</span></div>
+		    <div class="cell width-40"><input type="number" id="Psychology" name="attr_psychology" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140"><input type="radio" name="attr_skillpick" value="@{science}"><span>Science</span></div>
+		    <div class="cell width-40"><input type="number" id="Science" name="attr_science" min="-5" max="5" value="0"></div>
+		</div>
+        </div>
+    </div>
+
+	<div class="cell width-180">        
+        <div class="linha">
+	    <div class="cell">
+            <div class="cell width-140"> &ensp;<input type="radio" name="attr_statpick" value="@{chutzpah}"> <span>CHUTZPAH</span> </div>
+            <div class="cell width-40"> <input type="number" id="Chutzpah" name="attr_chutzpah"  min="-5" max="5" value="0"> </div>
+	    </div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140">&ensp;<input type="radio" name="attr_skillpick" value="@{bluff}"><span>&emsp;Bluff</span></div>
+		    <div class="cell width-40"><input type="number" id="Bluff" name="attr_bluff" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140">&ensp;<input type="radio" name="attr_skillpick" value="@{charm}"><span>&emsp;Charm</span></div>
+		    <div class="cell width-40"><input type="number" id="Charm" name="attr_charm" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140">&ensp;<input type="radio" name="attr_skillpick" value="@{intimidate}"><span>&emsp;Intimidate</span></div>
+		    <div class="cell width-40"><input type="number" id="Intimidate" name="attr_intimidate" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140">&ensp;<input type="radio" name="attr_skillpick" value="@{stealth}"><span>&emsp;Stealth</span></div>
+		    <div class="cell width-40"><input type="number" id="Stealth" name="attr_stealth" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+        </div>
+	</div>
+   
+
+	<div class="cell width-180">
+        <div class="linha"> 
+
+            <div class="cell width-140 valign"> &ensp;<input type="radio" name="attr_statpick" value="@{mechanics}"> <span>MECHANICS</span> </div>
+            <div class="cell cell width-40"> <input type="number" id="Mechanics" name="attr_mechanics" min="-5" max="5" value="0"></div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140">&ensp;<input type="radio" name="attr_skillpick" value="@{demolitions}"><span>&emsp;Demolitions</span></div>
+		    <div class="cell width-40"><input type="number" id="Demolitions" name="attr_demolitions" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140">&ensp;<input type="radio" name="attr_skillpick" value="@{engineering}"><span>&emsp;Engineer</span></div>
+		    <div class="cell width-40"><input type="number" id="Engineering" name="attr_engineering" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140">&ensp;<input type="radio" name="attr_skillpick" value="@{operate}"><span>&emsp;Operate</span></div>
+		    <div class="cell width-40"><input type="number" id="Operate" name="attr_operate" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-140">&ensp;<input type="radio" name="attr_skillpick" value="@{program}"><span>&emsp;Program</span></div>
+		    <div class="cell width-40"><input type="number" id="Program" name="attr_program" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+        </div>
+	</div>
+
+	<div class="cell width-180">
+        <div class="linha">
+
+            <div class="cell valign width-140"> &ensp;<input type="radio" name="attr_statpick" value="@{violence}"> <span>VIOLENCE</span> </div>
+            <div class="cell"> <input type="number" id="Violence" name="attr_violence" min="-5" max="5" value="0"></div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-120">&ensp;<input type="radio" name="attr_skillpick" value="@{athletics}"><span>&emsp;Athletics</span></div>
+		    <div class="cell width-40"><input type="number" id="Athletics" name="attr_athletics" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-120">&ensp;<input type="radio" name="attr_skillpick" value="@{guns}"><span>&emsp;Guns</span></div>
+		    <div class="cell width-40"><input type="number" id="Guns" name="attr_guns" min="-5" max="5" value="2"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-120">&ensp;<input type="radio" name="attr_skillpick" value="@{melee}"><span>&emsp;Melee</span></div>
+		    <div class="cell width-40"><input type="number" id="Melee" name="attr_melee" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+		<div class="cell">
+		    <div class="cell width-120">&ensp;<input type="radio" name="attr_skillpick" value="@{throw}"><span>&emsp;Throw</span></div>
+		    <div class="cell width-40"><input type="number" id="Throw" name="attr_throw" min="-5" max="5" value="0"></div>
+		</div>&nbsp;
+        </div>
+	</div>
+    </div>
+		<!-- Roll Query. Ask a player what their NODE is. -->
+		<hr>
+		<div class="cell">
+			<span>To generate NODE, select an Attribute and a Skill, enter any relevant modifiers, then hit the roll button. Modifiers from wounds are automatically included in the roll.</span>
+			<br><span>The Computer dice is always rolled. Always. Flags are automatically taken into account when rolling the Computer Dice.</span>
+		</div><br>
+		<div class="cell">
+			&emsp;<span>Modifier:</span>
+			<input type="number" name="attr_modifier" value="0">
+		</div>
+		<div class="cell">
+			&emsp;<span>Roll NODE</span>&emsp;
+			<button type="roll" value="\n **NODE Successes:** [[(@{skillpick} + @{statpick} + @{wounds} + @{modifier})d6>5 &noerror]]\n **Computer Dice:** [[1d6>@{flags} &noerror]]" name="roll_NODE"></button>
+		</div>
+
+
+ <div class="linha">
+
+    <div class="cell width-60"></div>
+
+
+ </div>
+
+
+  <hr>
+
+  <div class="linha top">
+    <h3>THIRD PART: WELLNESS</h3>
+  </div>
+  <hr>
+
+ <div class="linha">
+
+    <div class="cell width-120">
+	<div class="linha">
+	  <div class="cell width-70"><label>WOUNDS</label></div>&nbsp;
+	  <div class="cell"><label class="label" for="fine">Fine</label><input type="radio" id="fine" name="attr_wounds" value="0"></div><br>
+	  <div class="cell"><label class="label" for="hurt">Hurt</label><input type="radio" id="hurt" name="attr_wounds" value="-1"></div><br>
+	  <div class="cell"><label class="label" for="injured">Injured</label><input type="radio" id="injured" name="attr_wounds" value="-2"></div><br>
+	  <div class="cell"><label class="label" for="maimed">Maimed</label><input type="radio" id="maimed" name="attr_wounds" value="-3"></div><br>
+	  <div class="cell"><label class="label" for="dead">Dead</label><input type="radio" id="dead" name="attr_wounds" value="-6"></div>
+	</div>
+    </div>
+    
+    <div class="cell width-200">
+      <div class="linha">
+        <div class="cell width-70"><label>FLAGS</label></div>&nbsp;
+        <div class="cell"><label class="label" for="loyal">Loyal</label><input type="radio" id="loyal" name="attr_flags" value="6"></div><br>
+        <div class="cell"><label class="label" for="greylisted">Greylisted</label><input type="radio" id="greylisted" name="attr_flags" value="5"></div><br>
+        <div class="cell"><label class="label" for="restricted">Restricted</label><input type="radio" id="restricted" name="attr_flags" value="4"></div><br>
+        <div class="cell"><label class="label" for="citizenofinterest">Citizen-of-Interest</label><input type="radio" id="citizenofinterest" name="attr_flags" value="3"></div><br>
+        <div class="cell"><label class="label" for="wanted">Wanted</label><input type="radio" id="wanted" name="attr_flags" value="2"></div><br>
+      </div>
+    </div>
+
+    <div class="cell width-100">
+      <div class="linha">
+        <div class="cell width-100"><label>XP POINTS</label></div>&nbsp;
+	  <div class="cell width-70"><input type=number class="bignumber" name="attr_xp_points" min="0" max="999999" value="200"></div><br>&nbsp;
+        <div class="cell width-100"><label>MOXIE</label></div>&nbsp;
+        <div class="cell width-70"><input type=number class="bignumber" name="attr_moxie" min="0" max="500" value="8">
+      </div>
+    </div>
+
+  </div>
+    
+ </div>
+
+ <hr>
+
+ <div class="linha top">
+    <h3>PART THE FOURTH: PURPOSE IN LIFE</h3>
+ </div>
+
+ <hr>
+
+ <div class="linha">
+    <div class="cell width-400">
+      <label>MISSION OBJECTIVE(S)</label>
+      <textarea name="attr_mission_objectives" rows="4" cols="100">
+    </div>
+    <div class="cell width-10"></div>
+    <div class="cell width-400">
+      <label>ASSIGNED GEAR</label>
+      <textarea name="attr_assigned_gear" rows="4" cols="100">
+    </div>
+ </div>
+
+ <hr>
+</div>
+
+
+
+
+<div class="sheet-naughtyside">
+ <div class="linha centre">
+    <img src="https://github.com/radmissfliss/PPEsheet/blob/main/paranoia-naughty-title.png?raw=true">
+    TROUBLESHOOTER SHEET NAUGHTY SIDE
+
+ </div>
+
+ <div>
+
+  <div class="linha top">
+    <div class="cell width-200">
+      <span>Secret Society:</span>
+        <select name="attr_secret_society" class="cell width-400">
+          <option value="ZZ">No Secret Society</option>
+          <option value="0">Anti-Mutant</option>
+          <option value="1">Communists</option>
+          <option value="2">Corpore Metal</option>
+          <option value="3">Death Leopard</option>
+          <option value="4">First Church of Christ Computer Programmer (FCCCP)</option>
+          <option value="5">Frankenstein Destroyers</option>
+          <option value="6">Free Enterprise</option>
+          <option value="7">Haxxor</option>
+          <option value="8">Psion</option>
+          <option value="9">PURGE</option>
+          <option value="10">Romantics</option>
+          <option value="11">Sierra Club</option>
+          <option value="xx">---Deprecated Secret Societies---</option>
+          <option value="24">2D61O</option>
+          <option value="12">Alpha Complex Local History Research Group (ACLHRG)</option>
+          <option value="25">Buddy System</option>
+          <option value="13">Illuminati</option>
+          <option value="23">Informant's Guild</option>
+          <option value="14">Mystics</option>
+          <option value="22">Majestic X</option>
+          <option value="15">Phreaks</option>
+          <option value="yy">---Deprecated Virus Societies---</option>
+          <option value="16">Day Zero Assumption</option>
+          <option value="17">YourDoomed</option>
+          <option value="18">Hecticnet</option>
+          <option value="19">I'mLoyalSir</option>
+          <option value="20">ReadyPlayerNone</option>
+          <option value="21">$Human.YesPlease</option>
+        </select>
+     </div>
+     <br>
+     <div class="cell width-300">
+       <span>Secret Objective:</span>&nbsp;
+       <textarea name="attr_secret_objective" rows="5" cols="50" placeholder="What are you up to?"></textarea>
+     </div>
+     <div class="cell width-10"></div>
+     <div class="cell width-200"><span>Service Group Favours</span>
+         <textarea name="attr_service_group_favours" rows="5" cols="20"></textarea>
+     </div>
+     <br>
+     <div class="cell width-300">
+        <span>Mutant Power:</span>
+        <select name="attr_mutant_power" class="cell width-200">
+	     <option value="0">No Mutant Power</option>
+           <option value="1">Adrenalin Control</option>
+           <option value="2">Charm</option>
+           <option value="3">Corrode</option>
+           <option value="4">Cryokinesis</option>
+           <option value="5">Electroshock</option>
+           <option value="6">Force Field</option>
+           <option value="7">Hypersenses</option>
+           <option value="8">Invisibility</option>
+           <option value="9">Machine Empathy</option>
+           <option value="10">Mental Blast</option>
+           <option value="11">Pyrokinesis</option>
+           <option value="12">Telekinesis</option>
+           <option value="13">Telepathy</option>
+           <option value="14">Teleport</option>
+           <option value="15">X-Ray Vision</option>
+           <option value="xx">---Red-Clearance Edition Powers---</option>
+           <option value="16">Anomaly</option>
+           <option value="17">Levitation</option>
+           <option value="18">Puppeteer</option>
+           <option value="19">Strength</option>
+           <option value="20">Adhesive</option>
+           <option value="21">Toxic Odour</option>
+           <option value="22">Universal Translator</option>
+           <option value="23">Recharger</option>
+           <option value="24">Liquifier</option>
+           <option value="25">Jumper</option>
+           <option value="26">Hear Eyes</option>
+           <option value="27">Echolocation</option>
+           <option value="28">Direction Sense</option>
+           <option value="29">Charm Locks</option>
+           <option value="30">Body Pocket</option>
+        </select>
+		<!-- Cover roll. Acts the same as a skill roll, only it doesn't mean anything. -->
+     </div>
+     <div class="cell width-10"></div>
+     <div class="cell width-200"><span>Secret Society Favours</span>
+         <textarea name="attr_secret_society_favours" rows="5" cols="20"></textarea>
+     </div>
+
+     <br>
+     <div class="cell">
+         <span>Treasonous Gear (DO NOT USE OPENLY!):</span><br>
+         <textarea name="attr_treasonous_gear" rows="5" cols="50"></textarea>
+     </div>
+     <br>
+     <div class="cell">
+         <span>Evidence (For blackmail and accusations):</span><br>
+         <textarea name="attr_evidence" rows="5" cols="50"></textarea>
+     </div>
+     <br>
+     <div class="cell">
+         <span>DO NOT FORGET THESE NOTES:</span><br>
+         <textarea name="attr_notes" rows="5" cols="50"></textarea>
+     </div>
+
+ </div>
+
+</div>
+
+</div>
+
+
+<script type="text/worker">
+    const buttonlist = ["publicside","naughtyside"];
+    buttonlist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                sheetTab: button
+            });
+        });
+    });
+</script>
+
+
+<rolltemplate class="sheet-rolltemplate-moveDesc">
+    <div class="sheet-container sheet-color-{{color}}">
+        <div class="sheet-header">
+        {{#title}}<div class="sheet-title">{{title}}</div>{{/title}}
+        {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
+        </div>
+        <div class="sheet-content sheet-color-text-{{colorText}}">
+        {{#allprops() title subtitle color colorText dados}}
+            <div class="sheet-desc">{{value}}</div>
+        {{/allprops() title subtitle color colorText dados}}
+        </div>
+    </div>
+</rolltemplate>
+
+
+
+<rolltemplate class="sheet-rolltemplate-custom">
+    <div class="sheet-container sheet-color-{{color}}">
+        <div class="sheet-header">
+        {{#title}}<div class="sheet-title">{{title}}</div>{{/title}}
+        {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
+        </div>
+        <div class="sheet-content sheet-color-text-{{colorText}}">
+            <div class="sheet-key">dados</div>
+            {{#dados}}<div class="sheet-value">{{dados}}</div>{{/dados}}
+        {{#allprops() title subtitle color colorText dados}}
+            <div class="sheet-desc">{{value}}</div>
+        {{/allprops() title subtitle color colorText dados}}
+        </div>
+    </div>
+</rolltemplate>
+
+
+<script type="text/worker">
+
+
+function randomInteger(max){
+    return Math.floor(Math.random() * max) + 1;
+}
+
+</script>
+
+
