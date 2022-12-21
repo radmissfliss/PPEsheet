@@ -163,7 +163,7 @@
         </div>
 	</div>
     </div>
-		<!-- Roll Query. Ask a player what their NODE is. -->
+		<!-- Roll Query. Ask a player what their NODE is. Right now negative NODEs do not evaluate properly. -->
 		<hr>
 		<div class="cell">
 			<span>To generate NODE, select an Attribute and a Skill, enter any relevant modifiers, then hit the roll button. Modifiers from wounds are automatically included in the roll.</span>
@@ -175,7 +175,7 @@
 		</div>
 		<div class="cell">
 			&emsp;<span>Roll NODE</span>&emsp;
-			<button type="roll" value="\n **NODE Successes:** [[(@{skillpick} + @{statpick} + @{wounds} + @{modifier})d6>5 &noerror]]\n **Computer Dice:** [[1d6>@{flags} &noerror]]" name="roll_NODE"></button>
+			<button type="roll" value="\n **NODE Successes:** [[({@{skillpick} + @{statpick} + @{wounds} + @{modifier},1})d6>5 &noerror]]\n **Computer Dice:** [[1d6>@{flags} &noerror]]" name="roll_NODE"></button>
 		</div>
 
 
