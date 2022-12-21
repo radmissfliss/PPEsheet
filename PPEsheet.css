@@ -65,6 +65,7 @@
 
 .charsheet span{
   font-weight: bold;
+  fontfamily: "Courier New";
 }
 
 .charsheet .border0{
@@ -112,4 +113,9 @@ button[type=action].sheet-d6-dice::before {
 .charsheet .sheet-tabstoggle[value="publicside"] ~ div.sheet-publicside,
 .charsheet .sheet-tabstoggle[value="naughtyside"] ~ div.sheet-naughtyside {
     display: block;
+}
+
+/* set text size for fine print */
+.charsheet .fineprint {
+  font-size: 10px;
 }
