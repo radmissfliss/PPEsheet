@@ -34,8 +34,16 @@
  <div class="linha top">
     <div class="cell width-280"><span>Mandatory Bonus Duty:</span></div>
     <div class="cell width-100"><span>Service Group:</span></div>&nbsp;
-    <div class="cell width-280"><input type="text" name="attr_bonus_duty" class="width-260"></div>
-    <div class="cell top">      <select name="attr_service_group" class="width-400">
+	<div class="cell width-280"><select id="mbd"	name="attr_bonus_duty">
+		<option value="0">Team Leader</option>
+		<option value="2">Equipment Officer</option>
+		<option value="3">Happiness Officer</option>
+		<option value="4">Hygiene Officer</option>
+		<option value="5">Loyalty Officer</option>
+		<option value="6">Media Officer</option>
+	</select></div>
+    <!--<div class="cell width-280"><input type="text" name="attr_bonus_duty" class="width-260"></div>-->
+    <div class="cell top">      <select id="service_group" name="attr_service_group" class="width-400">
 					  <option value="0">Armed Forces</option>
 					  <option value="1">Central Processing Unit (CPU)</option>
 					  <option value="2">Housing Preservation Development & Mind Control (HPD&MC)</option>
@@ -163,7 +171,7 @@
         </div>
 	</div>
     </div>
-		<!-- Roll Query. Ask a player what their NODE is. Right now negative NODEs do not evaluate properly. This is lovely but we're sticking with the radio buttons because they're more intuitive.
+		<!-- Roll Query. Ask a player what their NODE is. Right now negative NODEs do not evaluate properly.
 		<hr>
 		<div class="cell">
 			<span>To generate NODE, select an Attribute and a Skill, enter any relevant modifiers, then hit the roll button. Modifiers from wounds are automatically included in the roll.</span>
